@@ -1,18 +1,23 @@
 
 body
 {
-    background-color: hsl(300, 100%, 32%);
+    background-color: hsl(263, 68%, 64%);
 }
 
-.cell
-{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
-    cursor: pointer;
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #f4f4f4; 
+    border-radius: 15px; 
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.3); 
+    font-size: 30px; 
+    font-weight: bold;
+    color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    transition: transform 0.2s, background-color 0.2s; 
 }
 
 #cellholder
@@ -25,6 +30,19 @@ body
 
 #gameholder
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     text-align: center;
+}
+
+#restart 
+{
+    background-color: hsl(266, 100%, 47%);
+    font-family: monospace;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#restart:hover
+{
+    background-color: hsl(0, 0%, 100%);
 }
